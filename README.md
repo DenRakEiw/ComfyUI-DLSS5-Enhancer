@@ -1,5 +1,19 @@
 # ComfyUI-DLSS5-Enhancer
 
+> **This is a fork with one fix that is not merged upstream yet:** the GPU generation is read from the card's compute
+> capability instead of its name, so workstation cards are recognised (RTX PRO ... Blackwell as the RTX 50 generation,
+> RTX ... Ada as 40, RTX A... as 30). Upstream pull request:
+> [Blueforcer/ComfyUI-DLSS5-Enhancer#17](https://github.com/Blueforcer/ComfyUI-DLSS5-Enhancer/pull/17).
+> Everything else is the original by Blueforcer. Install it in place of the original:
+>
+> ```
+> cd ComfyUI/custom_nodes
+> git clone https://github.com/DenRakEiw/ComfyUI-DLSS5-Enhancer
+> ```
+>
+> (remove or move away the original's folder first, then restart ComfyUI). This fork follows upstream: once the pull
+> request is merged there, go back to the original.
+
 Run NVIDIA DLSS 5 Neural Rendering over your frames and videos, inside ComfyUI.
 
 DLSS 5 is NVIDIA's neural rendering pass. In a game it reconstructs the material and lighting
